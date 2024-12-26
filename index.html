@@ -20,22 +20,28 @@
             text-decoration: underline;
         }
         img {
-            width: 100%;
-            max-width: 600px; /* ขนาดของรูปภาพที่ต้องการ */
-            cursor: pointer;
             display: block;
             margin: 10px auto;
+            cursor: pointer;
+        }
+        .main-menu-img {
+            width: 100%;
+            max-width: 600px; /* ขนาดของ Main menu */
+        }
+        .sub-menu-img {
+            width: 50%; /* ขนาดของรูปหัวข้อย่อย */
+            max-width: 300px; /* ขนาดสูงสุดที่ต้องการ */
         }
     </style>
 </head>
 <body>
     <!-- Main Menu -->
-    <h1> <img src="Main menu.png" alt="Main Menu" style="width:100%; max-width: 600px;"> </h1>
+    <h1> <img src="Main menu.png" alt="Main Menu" class="main-menu-img"> </h1>
 
     <!-- หัวข้อย่อย -->
-    <h3><img src="รายงาน Lead Visit ใน Power BI.png" alt="รายงาน Lead Visit ใน Power BI" onclick="location.href='lead.html'"></h3>
-    <h3><img src="รายงาน Prospect จาก E-bidding.png" alt="รายงาน Prospect จาก E-bidding" onclick="location.href='prospect.html'"></h3>
-    <h3><img src="รายงาน Ulite.png" alt="รายงาน Ulite" onclick="location.href='ulite.html'"></h3>
+    <h3><img src="รายงาน Lead Visit ใน Power BI.png" alt="รายงาน Lead Visit ใน Power BI" class="sub-menu-img" onclick="location.href='lead.html'"></h3>
+    <h3><img src="รายงาน Prospect จาก E-bidding.png" alt="รายงาน Prospect จาก E-bidding" class="sub-menu-img" onclick="location.href='prospect.html'"></h3>
+    <h3><img src="รายงาน Ulite.png" alt="รายงาน Ulite" class="sub-menu-img" onclick="location.href='ulite.html'"></h3>
 
 </body>
 </html>
