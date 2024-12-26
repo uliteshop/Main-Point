@@ -10,26 +10,32 @@
             margin: 20px;
         }
         h1 {
-            color: #333;
+            text-align: center;
         }
         h3 {
             margin: 20px 0;
-            color: #1a73e8;
             cursor: pointer;
-            text-decoration: none;
         }
         h3:hover {
             text-decoration: underline;
         }
+        img {
+            width: 100%;
+            max-width: 600px; /* ขนาดของรูปภาพที่ต้องการ */
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+        }
     </style>
 </head>
 <body>
-    <!-- แทนที่ h1 ด้วยรูปภาพ และเพิ่มขนาดใหญ่ขึ้น -->
-    <img src="Main menu.png" alt="Marketing & Sales Tools" style="width: 150%; max-width: 600px;">
+    <!-- Main Menu -->
+    <h1> <img src="Main menu.png" alt="Main Menu" style="width:100%; max-width: 600px;"> </h1>
 
-    <h3 onclick="location.href='lead.html'">รายงาน Lead Visit ใน Power BI</h3>
-    <h3 onclick="location.href='prospect.html'">รายงาน Prospect จาก E-bidding</h3>
-    <h3 onclick="location.href='ulite.html'">รายงาน Ulite</h3>
+    <!-- หัวข้อย่อย -->
+    <h3><img src="รายงาน Lead Visit ใน Power BI.png" alt="รายงาน Lead Visit ใน Power BI" onclick="location.href='lead.html'"></h3>
+    <h3><img src="รายงาน Prospect จาก E-bidding.png" alt="รายงาน Prospect จาก E-bidding" onclick="location.href='prospect.html'"></h3>
+    <h3><img src="รายงาน Ulite.png" alt="รายงาน Ulite" onclick="location.href='ulite.html'"></h3>
 
 </body>
 </html>
